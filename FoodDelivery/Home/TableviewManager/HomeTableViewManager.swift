@@ -8,7 +8,6 @@
 import UIKit
 
 protocol HomeTableViewManagerInput {
-//    func setup(tableView: UITableView)
     func update(with viewModel: HomeViewModel)
     func scrollTo(category: CategoryType)
 }
@@ -78,26 +77,15 @@ extension HomeTableViewManager: UITableViewDataSource {
         
         view.delegate = self
         configurator.configure(cell: view)
-//        view.applyCircleShadow()
-//        view.layer.shadowOpacity = 0.1
-////        view.layer.shadowPath =
-//        view.layer.shadowColor = UIColor.appColor(.lightGray).cgColor
-//        view.layer.shadowOffset = CGSize(width: 0, height: 10)
-//        view.layer.shadowRadius = 0.5
-//        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-
         
         return view
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == .zero {
-            return .zero
+        if section == 1 {
+            return 56
         }
-//        if section == 2 {
-//            return .zero
-//        }
-        return 56
+        return .zero
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -155,45 +143,9 @@ extension HomeTableViewManager: SegmentCellDelegate, SegmentViewOutput {
     }
 }
 
-//// MARK: - HomeHeaderCellDelegate
-//extension HomeTableViewManager: HomeHeaderCellDelegate {
-//}
-
 // MARK: - UIScrollViewDelegate
 extension HomeTableViewManager: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let totalScroll = scrollView.contentSize.height - (-scrollView.bounds.size.height )
-//        
-//        /* This is the percentage of the current offset / bottom offset. */
-//        let percentage = scrollView.contentOffset.y / totalScroll
         tableView?.headerView(forSection: 1)?.applyCircleShadow(shadowOffset: CGSize(width: 0, height: scrollView.contentOffset.y > 150 ? 10 : 0))
-        
-    }
-}
-
-extension UIView {
-    func applyCircleShadow(shadowRadius: CGFloat = 2,
-                            shadowOpacity: Float = 0.2,
-                           shadowColor: CGColor = UIColor.appColor(.lightGray).cgColor,
-                            shadowOffset: CGSize = CGSize(width: 0, height: 8)) {
-         layer.cornerRadius = frame.size.height / 2
-         layer.masksToBounds = false
-         layer.shadowColor = shadowColor
-         layer.shadowOffset = shadowOffset
-         layer.shadowRadius = shadowRadius
-         layer.shadowOpacity = shadowOpacity
-     }
-    
-    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
-        layer.masksToBounds = false
-        layer.shadowColor = color.cgColor
-        layer.shadowOpacity = opacity
-        layer.shadowOffset = offSet
-        layer.shadowRadius = radius
-        
-        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        layer.shouldRasterize = true
-        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
-        layer.cornerRadius = layer.cornerRadius
     }
 }

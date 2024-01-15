@@ -75,11 +75,8 @@ extension HomeProductCell: Configurable {
         containerView.clipsToBounds = true
         containerView.layer.masksToBounds = true
         containerView.layer.cornerRadius = model.isFirst ? 30 : 0
-//        containerView.layer.cornerCurve = .continuous
         containerView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-//        if let imageURL = model.icon, let url = URL(string: imageURL) {
-//            iconView.kf.setImage(with: url)
-//        }
+        
         iconView.image = UIImage(named: model.icon ?? "")
         nameLabel.text = model.name
         descriptionLabel.text = model.description

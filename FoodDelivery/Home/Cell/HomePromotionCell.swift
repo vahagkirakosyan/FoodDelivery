@@ -36,13 +36,12 @@ final class HomePromotionCell: NLCollectionViewCell {
         contentView.addSubview(containerView)
         containerView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 3, left: 0, bottom: 0, right: 8))
         
-//        imageView.contentMode = .scaleAspectFill
         imageView.backgroundColor = .appColor(.tableBackground)
         imageView.layer.cornerRadius = 10
         imageView.layer.cornerCurve = .continuous
         imageView.layer.masksToBounds = true
         contentView.addSubview(imageView)
-        imageView.autoPinEdgesToSuperviewEdges(/*with: UIEdgeInsets(top: -13, left: -15, bottom: -20, right: -15)*/)
+        imageView.autoPinEdgesToSuperviewEdges()
     }
 }
 

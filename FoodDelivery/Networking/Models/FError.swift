@@ -25,7 +25,6 @@ extension FErrorShort {
 
 
 struct FError: Decodable {
-//    let response: FErrorResponse?
     let status: Int?
     let message: String?
     let name: String?

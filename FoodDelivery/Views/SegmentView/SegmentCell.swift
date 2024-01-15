@@ -10,10 +10,6 @@ import UIKit
 protocol SegmentCellDelegate: AnyObject {
     func didSelectItem(name: String, type: CategoryType)
 }
-//
-//extension SegmentCellDelegate {
-//
-//}
 
 final class SegmentCell: NLTableViewCell {
     

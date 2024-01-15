@@ -93,7 +93,7 @@ extension HomeDataConverter: HomeDataConvertorInput {
                                           height: 172))
         }
         
-        tableSections.append(Section(headerConfigurator: createHomeCategoryHeader(categories: categories), rows: rows))
+        tableSections.append(Section(headerConfigurator: nil, rows: rows))
                
         rows = []
         
@@ -109,7 +109,7 @@ extension HomeDataConverter: HomeDataConvertorInput {
                                           height: 172))
         }
         
-        tableSections.append(Section(headerConfigurator: createHomeCategoryHeader(categories: categories), rows: rows))
+        tableSections.append(Section(headerConfigurator: nil, rows: rows))
         
         return HomeViewModel(sections: tableSections)
     }

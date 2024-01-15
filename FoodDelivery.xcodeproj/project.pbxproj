@@ -55,6 +55,7 @@
 		32699A2C2B52A4CF000D81D4 /* TableCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32699A2B2B52A4CF000D81D4 /* TableCellConfigurator.swift */; };
 		32699A2E2B52A657000D81D4 /* TableHeaderFooterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32699A2D2B52A657000D81D4 /* TableHeaderFooterConfigurator.swift */; };
 		32699A302B52B73F000D81D4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32699A2F2B52B73F000D81D4 /* UITableView+.swift */; };
+		32699A342B558BA0000D81D4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32699A332B558BA0000D81D4 /* UIView+.swift */; };
 		380E5F22A183028C2A27C8A7 /* Pods_FoodDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426921F95757EA9DA5198BC /* Pods_FoodDelivery.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		32699A2B2B52A4CF000D81D4 /* TableCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellConfigurator.swift; sourceTree = "<group>"; };
 		32699A2D2B52A657000D81D4 /* TableHeaderFooterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderFooterConfigurator.swift; sourceTree = "<group>"; };
 		32699A2F2B52B73F000D81D4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		32699A332B558BA0000D81D4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		4426921F95757EA9DA5198BC /* Pods_FoodDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FDD0D4A5D62A85B13BAE46 /* Pods-FoodDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery.debug.xcconfig"; path = "Target Support Files/Pods-FoodDelivery/Pods-FoodDelivery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 				32699A232B5297E2000D81D4 /* UICollectionView+.swift */,
 				32699A252B5298E8000D81D4 /* NSObject+.swift */,
 				32699A2F2B52B73F000D81D4 /* UITableView+.swift */,
+				32699A332B558BA0000D81D4 /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				326999D12B5151E6000D81D4 /* UserAction.swift in Sources */,
 				326999B72B513D2F000D81D4 /* HomeViewController.swift in Sources */,
 				32699A202B528B91000D81D4 /* CenteredCollectionViewFlowLayout.swift in Sources */,
+				32699A342B558BA0000D81D4 /* UIView+.swift in Sources */,
 				32699A012B517D22000D81D4 /* NLView.swift in Sources */,
 				326999CF2B5151BC000D81D4 /* APIClient.swift in Sources */,
 				326999DB2B5156AF000D81D4 /* HomePresenter.swift in Sources */,
